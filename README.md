@@ -1,5 +1,6 @@
 # jie
 杰的笔记
+                                                                    JavaScript基础大总结(一) 
 ✍初识JavaScirpt
 JavaScript 是世界上最流行的语言之一，是一种运行在客户端的脚本语言 （Script 是脚本的意思）
 脚本语言：不需要编译，运行过程中由 js 解释器( js 引擎）逐行来进行解释并执行
