@@ -5,6 +5,8 @@
 JavaScript 是世界上最流行的语言之一，是一种运行在客户端的脚本语言 （Script 是脚本的意思）
 脚本语言：不需要编译，运行过程中由 js 解释器( js 引擎）逐行来进行解释并执行
 现在也可以基于 Node.js 技术进行服务器端编程
+
+
 ![image](https://user-images.githubusercontent.com/73590102/201515545-9e5ad987-b66d-4d41-8d48-c69e3314c04f.png)
 
 
@@ -14,10 +16,13 @@ JavaScript 是世界上最流行的语言之一，是一种运行在客户端的
 渲染引擎：用来解析HTML与CSS，俗称内核，比如 chrome 浏览器的 blink ，老版本的 webkit
 JS 引擎：也称为 JS 解释器。 用来读取网页中的JavaScript代码，对其处理后运行，比如 chrome 浏览器的 V8
 浏览器本身并不会执行JS代码，而是通过内置 JavaScript 引擎(解释器) 来执行 JS 代码 。JS 引擎执行代码时逐行解释每一句源码（转换为机器语言），然后由计算机去执行，所以 JavaScript 语言归为脚本语言，会逐行解释执行。
+
+
 ![image](https://user-images.githubusercontent.com/73590102/201515542-d93914db-8d89-4e12-9c68-9c18edc9e057.png)
 
 ✍JS的组成
 JavaScript 包括 ECMAScript、DOM、BOM
+
 ![image](https://user-images.githubusercontent.com/73590102/201515565-de17b820-4d02-4bbb-8672-c5b4a98460f8.png)
 
 ✍ECMAScript
