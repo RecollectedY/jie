@@ -5,6 +5,7 @@
 JavaScript 是世界上最流行的语言之一，是一种运行在客户端的脚本语言 （Script 是脚本的意思）
 脚本语言：不需要编译，运行过程中由 js 解释器( js 引擎）逐行来进行解释并执行
 现在也可以基于 Node.js 技术进行服务器端编程
+![image](https://user-images.githubusercontent.com/73590102/201515545-9e5ad987-b66d-4d41-8d48-c69e3314c04f.png)
 
 
 ✍浏览器执行JS简介
@@ -13,18 +14,15 @@ JavaScript 是世界上最流行的语言之一，是一种运行在客户端的
 渲染引擎：用来解析HTML与CSS，俗称内核，比如 chrome 浏览器的 blink ，老版本的 webkit
 JS 引擎：也称为 JS 解释器。 用来读取网页中的JavaScript代码，对其处理后运行，比如 chrome 浏览器的 V8
 浏览器本身并不会执行JS代码，而是通过内置 JavaScript 引擎(解释器) 来执行 JS 代码 。JS 引擎执行代码时逐行解释每一句源码（转换为机器语言），然后由计算机去执行，所以 JavaScript 语言归为脚本语言，会逐行解释执行。
-
-
+![image](https://user-images.githubusercontent.com/73590102/201515542-d93914db-8d89-4e12-9c68-9c18edc9e057.png)
 
 ✍JS的组成
 JavaScript 包括 ECMAScript、DOM、BOM
-
-
+![image](https://user-images.githubusercontent.com/73590102/201515565-de17b820-4d02-4bbb-8672-c5b4a98460f8.png)
 
 ✍ECMAScript
 ECMAScript 是由ECMA 国际（ 原欧洲计算机制造商协会）进行标准化的一门编程语言，这种语言在万维网上应用广泛，它往往被称为 JavaScript 或 JScript，但实际上后两者是 ECMAScript 语言的实现和扩展。
-
-
+![image](https://user-images.githubusercontent.com/73590102/201515569-41f07a97-def4-459b-8342-ca1efe4e59fa.png)
 
 ECMAScript：ECMAScript 规定了JS的编程语法和基础核心知识，是所有浏览器厂商共同遵守的一套JS语法工业标准。
 
@@ -37,76 +35,63 @@ BOM (Browser Object Model，简称BOM) 是指浏览器对象模型，它提供�
 1、JS初体验🔥
 1.1、行内式JS
 <input type="button" value="点我试试" onclink="javascript:alert('Hello World')" />
-1
-可以将单行或少量JS代码写在HTML标签的事件属性中(以on开头的属性)，如： onclink
-注意单双引号的使用：在HTML中我们推荐使用双引号，JS中我们推荐使用单引号
-可读性差，在 HTML 中编入 JS 大量代码时，不方便阅读
-特殊情况下使用
+
+1.可以将单行或少量JS代码写在HTML标签的事件属性中(以on开头的属性)，如： onclink
+2.注意单双引号的使用：在HTML中我们推荐使用双引号，JS中我们推荐使用单引号
+3.可读性差，在 HTML 中编入 JS 大量代码时，不方便阅读
+4.特殊情况下使用
+
 1.2、内嵌式JS🔥
 <script>
      alert('Hello World!');
 </script>
-1
-2
-3
 可以将多行JS代码写到<script>标签中
 内嵌 JS 是学习时常用的方式
+
 1.3、外部JS🔥
-<script src="my.js"></script>
-1
-利于HTML页面代码结构化，把单独JS代码独立到HTML页面之外，既美观，又方便
-
-引用外部JS文件的script标签中间不可以写代码
-
-适合于JS代码量比较大的情况
+<script src="jie.js"></script>
+1.利于HTML页面代码结构化，把单独JS代码独立到HTML页面之外，既美观，又方便
+2.引用外部JS文件的script标签中间不可以写代码
+3.适合于JS代码量比较大的情况
 
 2、JS基本语法🔥
 2.1、注释🔥
 2.1.1、单行注释🔥
 //  单行注释
-1
 快捷键ctrl + /
 2.1.2、多行注释🔥
 /*
 	多行注释
 */    
-1
-2
-3
 快捷键 shift + alt + a
 vscode中修改快捷键方式：vscode➡ 首选项按钮➡ 键盘快捷方式 ➡ 查找原来的快捷键➡ 修改为新的快捷键➡ 回车确认
+
 2.2、输入输出语句🔥
-方法	说明	归属
-alert(msg);	浏览器弹出警示框	浏览器
-console.log(msg);	浏览器控制台打印输出信息	浏览器
-prompt(info);	浏览看弹出输入框，用户可以输入	浏览器
+方法			说明			归属
+alert(msg);		浏览器弹出警示框		浏览器
+console.log(msg);	浏览器控制台打印输出信息	   浏览器
+prompt(info);	浏览看弹出输入框，用户可以输入		浏览器
 alert() 主要用来显示消息给用户
 console.log() 用来给程序员看自己运行时的消息
+
 2.3、变量🔥
 变量是用于存放数据的容器，我们通过变量名获取数据，甚至数据可以修改
-
 本质：变量是程序在内存中申请的一块用来存放数据的空间
 
 2.3.1、变量初始化🔥
-var是一个JS关键字，用来声明变量(variable变量的意思)。使用该关键字声明变量后，计算机会自动为变量分配内存空间。
-
-age 是程序员定义的变量名，我们要通过变量名来访问内存中分配的空间
+1.var是一个JS关键字，用来声明变量(variable变量的意思)。使用该关键字声明变量后，计算机会自动为变量分配内存空间。
+2.age 是程序员定义的变量名，我们要通过变量名来访问内存中分配的空间
 
 //声明变量同时赋值为18
 var age = 18; 
 //同时声明多个变量时，只需要写一个 var， 多个变量名之间使用英文逗号隔开。
-
 var age = 18, address ='火影村',salary = 15000;
-1
-2
-3
-4
-5
+
 2.3.2、声明变量特殊情况🔥
-情况	说明	结果
-var age; console.log(age);	只声明，不赋值	undefined
-console.log(age)	不声明 不赋值 直接使用	报错
-age = 10;console.log(age);	不声明 只赋值	10
+情况				说明				结果
+var age; console.log(age);	只声明，不赋值		   	undefined
+console.log(age)		不声明 不赋值 直接使用		  报错
+age = 10;console.log(age);	不声明 只赋值	            		10
 2.3.3、变量的命名规范🔥
 由字母(A-Z,a-z)，数字(0-9)，下划线(_)，美元符号($)组成，如:usrAge,num01,__name
 
